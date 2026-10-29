@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {createRoot} from 'react-dom/client';
+import './style.css';
 
 type Task = {id:string,title:string,description:string|null,subject:string|null,priority:'LOW'|'MEDIUM'|'HIGH',status:'PENDING'|'COMPLETED',dueAt:string|null,estimatedMinutes:number};
 type Plan = {message:string,recommendations:{taskId:string,title:string,score:number,suggestedMinutes:number,reason:string}[]};

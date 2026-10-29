@@ -26,7 +26,7 @@ spec:
       containers:
         - name: planner-service
           image: sharizard20/teenflow-planner-service:1.0.0
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           env:
